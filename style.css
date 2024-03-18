@@ -137,15 +137,6 @@ body {
   }
 }
 
-.slowFade {
-  display: flex;
-  align-items: flex-start;
-  background: #fff;
-  height: 100vh;
-  overflow: hidden;
-  position: relative;
-  }
-
 .slider-wrapper {
 	position: relative;
 	max-width: 70rem;
@@ -174,19 +165,6 @@ body {
 	scroll-snap-align: start;
 	object-fit: cover;
 }
-.slowFade .slide img {
-  position: absolute;
-  min-width: 100%;
-  min-height: 100%;
-  height: auto;
-  background: #000;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  opacity: 0;
-  transform: scale(1.5) rotate(15deg);
-  -webkit-animation: slowFade 2s infinite;
-  animation: slowFade 2s infinite;
-  }
 
 .slider-nav {
 	display: flex;
@@ -209,35 +187,4 @@ body {
 
 .slider-nav a:hover {
 	opacity: 1;
-}
-
-.slowFade .slide:nth-child(3) img {
-  -webkit-animation-delay: 8s;
-  animation-delay: 8s;
-  }
-  .slowFade .slide:nth-child(2) img {
-  -webkit-animation-delay: 16s;
-  animation-delay: 16s;
-  }
-  .slowFade .slide:nth-child(1) img {
-  -webkit-animation-delay: 24s;
-  animation-delay: 24s;
-  }
-  @keyframes slowFade {
-  25% {
-  opacity: 1;
-  transform: scale(1) rotate(0);
-  }
-  40% {
-  opacity: 0;
-  }
-  }
-  @-webkit-keyframes slowFade {
-  25% {
-  opacity: 1;
-  transform: scale(1) rotate(0);
-  }
-  40% {
-  opacity: 0;
-  }
 }
