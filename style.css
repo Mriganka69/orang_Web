@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -33,7 +35,7 @@ body{
     z-index: 100;
 }
 
-.header::before{
+/* .header::before{
     content: '';
     position: absolute;
     top: 0;
@@ -42,7 +44,7 @@ body{
     height: 100%;
     background: #8e192c;
     z-index: -1;
-}
+} */
 
 .logo{
     font-size: 2rem;
@@ -57,13 +59,13 @@ body{
   text-decoration: none;
   font-weight: 500;
   margin-left: 2.5rem;
-  /* border: 2px solid black;  */
+  /* border: 2px solid black; */
   border-radius: 7px;
   padding: 1px 3px;
 }
 
 .navbar a:hover{
-  background-color: aqua;
+  background-color: white;
   color: black;
 }
 
@@ -137,5 +139,194 @@ body{
          transform: translateY(0);
          opacity: 1;
          transition-delay: calc(.15s * var(--i));
+    }
+}
+
+/* welcome section */
+
+.first .box {
+    height: 75vh;
+    width: 100%;
+    opacity: 0.4;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+.first {
+    position: relative;
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 600;
+    height: 75vh;
+    width: 100%;
+    background: url(Assets/images/kaziranga-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+} 
+
+.welcome{
+    position: relative;
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 600;
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.welcome h1{
+    text-align: center;
+    font-size: 2.8rem;
+    color: white;
+}
+.welcome p{
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+}
+
+/* welcome section animation */
+
+.first .welcome{
+    z-index: 1;
+}
+
+.first .welcome h1,
+.first .welcome p{
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent 0.5s 1s linear 1 forwards;
+}
+
+.first .welcome h1{
+    animation-delay: 1.2s;
+}
+.first .welcome p{
+    animation-delay: 1.4s;
+}
+
+@keyframes showContent {
+    to{
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
+
+/* About Us  Section*/
+
+.aboutUs{
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 600;
+    min-height: 60vh;
+    width: 100%;
+    background-color: rgb(5, 25, 39);
+    padding: 26px;
+}
+
+.aboutUs h1{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.aboutUs p{
+    font-size: 1.2rem;
+    text-align: center;
+    color: white;
+}
+
+
+/* Features  Section*/
+
+.features{
+    font-family: "Potta One", system-ui;
+    font-weight: 400;
+    min-height: 75vh;
+    width: 100%;
+    background-color: #E6E6FA;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.features h1{
+    font-family: "Potta One", system-ui;
+    font-weight: 400;
+    padding: 20px;
+    text-align: center;
+    font-size: 2.9rem;
+    color: rgb(0, 0, 0);
+}
+
+.features .fname{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.features .fname div{
+    display: flex;
+    height: 250px;
+    width: 250px;
+    background-color: red;
+    /* background: url(Assets/images/image2.png); */
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 5px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all .40s ease;
+}
+.features .fname div:hover{
+    transform: translateY(-5px);
+    color: #fff;
+    cursor: pointer;
+}
+
+.features .fname .feature-1{
+    background: url(Assets/images/Water.png);
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+.features .fname .feature-2{
+    background: url(Assets/images/Wifi\ logo.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.features .fname .feature-3{
+    background: url(Assets/images/Heigenic\ and\ Healty\ Food.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.features .fname .feature-4{
+    background: url(Assets/images/Badminton\ court\ inside\ Hostel\ \(1\).png);
+    background-size: cover;
+    background-position: center center;
+}
+
+
+@media (max-width: 1165px)
+{
+    .features div{
+        flex-direction: column;
+        gap: 20px;
     }
 }
