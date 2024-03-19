@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  list-style: none;
   box-sizing: border-box;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
@@ -8,6 +10,8 @@
 body {
   min-height: 100vh;
   background: white;
+  height: 100vh;
+  width: 100%;
 }
 .KUlogo {
   display: flex;
@@ -187,4 +191,104 @@ body {
 
 .slider-nav a:hover {
 	opacity: 1;
+}
+
+
+/*Footer code*/
+section{
+  padding: 80px 13% 70px;
+}
+
+.footer{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  gap: 3.5rem;
+  background: #1a242f;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+}
+
+.footer-content h3{
+  color: #fff;
+  margin-bottom: 1.5rem;
+  font-size: 20px;
+}
+
+.footer-content li{
+  margin-bottom: 16px;
+}
+
+.footer-content li a{
+  display: block;
+  color: #d6d6d6;
+  font-size: 15px;
+  font-weight: 400;
+  transition: all .40s ease;
+}
+
+.footer-content li a:hover{
+  transform: translateY(-3px) translateX(-5px);
+  color: #fff;
+}
+
+.footer-content p{
+  color: #d6d6d6;
+  font-size: 16px;
+  line-height: 30px;
+  margin: 20px 0;
+}
+.icons1 {
+  position: absolute;
+  left: 5%;
+  font-size: 2.8rem;
+  color: #000000;
+  cursor: pointer;
+  display: inline-flex; /* Change from display: none */
+}
+
+.icons1 a{
+  display: inline-block;
+  font-size: 30px;
+  color: #d6d6d6;
+  margin-right: 20px;
+  transition: all .40 ease;
+}
+
+.icons1 a:hover{
+  color: #fff;
+  transform: translateY(-5px);
+}
+
+@media (max-width:1690px){
+  section{
+      padding: 50px 5% 40px;
+  }
+}
+
+@media (max-width:1220px){
+  .footer{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+      gap: 2rem;
+  }
+}
+
+@media (max-width:700px){
+  .footer{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+      gap: 2.5rem;
+  }
+}
+
+@media (max-width: 1165px) {
+  .icons1 {
+    display: inline-flex;
+  }
+}
+
+.footerlogo{
+  height: 80px;
 }
