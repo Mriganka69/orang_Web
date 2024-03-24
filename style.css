@@ -99,14 +99,14 @@ body {
 }
 
 
-.navbar a:hover{
-  background-color: white;
-}
+/* .navbar a:hover{
+  background-color: rgb(90, 50, 50);
+} */
 
 .navbar a:hover {
-  background-color: aqua;
+  /* background-color: rgb(0, 0, 0); */
 
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 #check {
