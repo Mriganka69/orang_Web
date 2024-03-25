@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+  }
+.members{
+    width: 100%;
+}
+.members .positions{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.members .positions a{
+    margin:10px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: rgb(102, 90, 237);
+    color: white;
+}
+
+.members .positions a:hover{
+    background-color: blue;
+    color: white;
+   transform: translateY(-5px);
+}
+
+
+@media (max-width: 1165px)
+{
+    .members .positions{
+        flex-direction: column;
+    }
+  }
+
+.separation{
+    height: 7px;
+    background-color: rgb(80, 79, 79);
+    margin: 10px 20px;
+}
+
+.description{
+    height: 70vh;
+    background-color: #E6E6FA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.description .card{
+    border-radius: 20px;
+    background: white;
+    width: 350px;
+    height: 400px;
+}
+
+.card .upper{
+    height: 60%;
+    background-color: blue;
+    /* border-radius: 20px; */
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .adminImage{
+    display: flex;
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    /* background: url("/Admin/Images/Head_Warden.jpg"); */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 5px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all .40s ease;
+}
+
+.card .adminImage .circle{
+    height: 195px;
+    width: 195px;
+    border-radius: 50%;
+   border: 4px solid blue;
+   background: url("/Admin/Images/Head_Warden.jpg");
+   background-size: cover;
+   background-position: center center;
+   background-repeat: no-repeat;
+}
+.card .lower{
+    height: 40%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    background-color: white;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.card .lower .adminName{
+    margin: 10px 0px;
+}
