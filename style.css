@@ -87,6 +87,7 @@ body {
   font-weight: 700;
 }
 
+
 .navbar a {
   font-size: 1.15rem;
   color: white;
@@ -104,8 +105,7 @@ body {
 } */
 
 .navbar a:hover {
-  /* background-color: rgb(0, 0, 0); */
-
+  background-color: white; 
   color: rgb(0, 0, 0);
 }
 
