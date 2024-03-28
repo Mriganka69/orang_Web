@@ -315,17 +315,29 @@ body {
 }
 
 .aboutUs-image{
-  flex: 1;
+  /* flex: 1; */
+  display: flex;
   margin-right: 40px;
   overflow: hidden;
   margin-right: 0; /* Removed margin to place left */
 }
 
+.aboutUs-content{
+  display: flex;
+  flex-direction: column;
+}
+
 .aboutUs-image img{
   max-width: 100%;
   height: auto;
+  
   display: block;
   transition: 0.5s ease;
+}
+
+.image-id1{
+  height: 100px;
+  width: 100px;
 }
 
 .aboutUs-image:hover img{
