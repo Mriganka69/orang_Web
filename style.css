@@ -265,28 +265,116 @@ body {
 
 /* About Us  Section*/
 
-.aboutUs{
-    font-family: "Martel Sans", sans-serif;
-    font-weight: 600;
-    min-height: 60vh;
-    width: 100%;
-    background-color: rgb(5, 25, 39);
-    padding: 26px;
+.aboutUs-heading{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px auto;
 }
 
-.aboutUs h1{
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 50px;
-    color: white;
+.aboutUs-heading h1{
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 25px;
+  position: relative;
 }
 
-.aboutUs p{
-    font-size: 1.2rem;
-    text-align: center;
-    color: white;
+.aboutUs-heading h1::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  display: block;
+  margin: 0 auto;
+  background-color: #4caf50;
 }
 
+.aboutUs-heading p{
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 35px;
+}
+
+.aboutUs-container{
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.aboutUs-about{
+  display: flex;
+  /* display: grid;
+  grid-template-columns: 1fr 2fr; */
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row; /* Added flex-direction */
+}
+
+.aboutUs-image{
+  flex: 1;
+  margin-right: 40px;
+  overflow: hidden;
+  margin-right: 0; /* Removed margin to place left */
+}
+
+.aboutUs-image img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: 0.5s ease;
+}
+
+.aboutUs-image:hover img{
+  transform: scale(1.2);
+}
+
+.aboutUs-content{
+  flex: 1;
+}
+
+.aboutUs-content h2{
+  font-size: 23px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.aboutUs-content p{
+  font-size: 18px;
+  line-height: 1.5;
+  color: #666;
+}
+
+@media screen and (max-width: 768px){
+  .aboutUs-heading{
+    padding: 0px 20px;
+  }
+  .aboutUs-heading h1{
+    font-size: 36px;
+  }
+  .aboutUs-heading p {
+    font-size: 17px;
+    margin-bottom: 0px;
+  }
+  .aboutUs-content{
+    padding: 0px;
+  }
+  .aboutUs-about{
+    padding: 20px;
+    flex-direction: column;
+  }
+  .aboutUs-image{
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+  .aboutUs-content p{
+    padding: 0px;
+    font-size: 16px;
+  }
+}
 
 /* Features  Section*/
 
