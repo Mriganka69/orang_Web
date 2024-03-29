@@ -391,11 +391,15 @@ body {
 /* Features  Section*/
 
 .features{
+  position: relative;
     font-family: "Potta One", system-ui;
     font-weight: 400;
     min-height: 75vh;
     width: 100%;
-    background-color: #E6E6FA;
+    background: url("/Features svg/orangphoto-01.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     padding-bottom: 20px;
     display: flex;
     flex-direction: column;
@@ -403,16 +407,28 @@ body {
     align-items: center;
 }
 
+.features .box {
+  height: 75vh;
+  width: 100%;
+  opacity: 0.4;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .features h1{
+    position: relative;
     font-family: "Potta One", system-ui;
     font-weight: 400;
     padding: 20px;
     text-align: center;
     font-size: 2.9rem;
-    color: rgb(0, 0, 0);
+    color: white;
 }
 
 .features .fname{
+  position: relative;
     display: flex;
     align-items: center;
     width: 100%;
@@ -421,9 +437,10 @@ body {
 
 .features .fname div{
     display: flex;
+    flex-direction: column;
     height: 250px;
     width: 250px;
-    background-color: red;
+    /* background-color: white; */
     /* background: url(Assets/images/image2.png); */
     background-position: center center;
     background-repeat: no-repeat;
@@ -434,33 +451,43 @@ body {
     overflow: hidden;
     transition: all .40s ease;
 }
+
+.features .fname div img{
+   filter: invert();
+    width: 100px;
+}
+
+.features .fname div p{
+color: white;
+  margin-top: 15px;
+  font-weight: bold;
+}
 .features .fname div:hover{
     transform: translateY(-5px);
-    color: #fff;
     cursor: pointer;
 }
 
 .features .fname .feature-1{
-    background: url(Assets/images/Water.png);
+    /* background: url(Assets/images/Water.png); */
     background-size: cover;
     background-position: center center;
     
 }
 
 .features .fname .feature-2{
-    background: url(Assets/images/Wifi\ logo.png);
+    /* background: url(Assets/images/Wifi\ logo.png); */
     background-size: cover;
     background-position: center center;
 }
 
 .features .fname .feature-3{
-    background: url(Assets/images/Heigenic\ and\ Healty\ Food.png);
+    /* background: url(Assets/images/Heigenic\ and\ Healty\ Food.png); */
     background-size: cover;
     background-position: center center;
 }
 
 .features .fname .feature-4{
-    background: url(Assets/images/Badminton\ court\ inside\ Hostel\ \(1\).png);
+    /* background: url(Assets/images/Badminton\ court\ inside\ Hostel\ \(1\).png); */
     background-size: cover;
     background-position: center center;
 }
