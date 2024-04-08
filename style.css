@@ -195,7 +195,7 @@ body {
   left: 0;
 }
 
-.first {
+/* .first {
   position: relative;
   font-family: "Martel Sans", sans-serif;
   font-weight: 600;
@@ -205,7 +205,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-}
+} */
 
 .welcome {
   position: relative;
@@ -332,11 +332,11 @@ body {
 
 /* Features  Section*/
 
-.features {
+/* .features {
   position: relative;
   font-family: "Potta One", system-ui;
   font-weight: 400;
-  /* min-height: 75vh; */
+  
   width: 100%;
   background: url("/Features svg/orangphoto-01.jpeg");
   background-repeat: no-repeat;
@@ -347,7 +347,7 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-}
+} */
 
 .features .box {
   height: 100%;
