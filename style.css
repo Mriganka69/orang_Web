@@ -48,7 +48,7 @@ body {
 }
 
 
-/* .header::before{
+.header::before{
     content: '';
     position: absolute;
     top: 0;
@@ -57,7 +57,7 @@ body {
     height: 100%;
     background: #8e192c;
     z-index: -1;
-} */
+}
 
 
 .logo {
@@ -67,7 +67,7 @@ body {
   font-weight: 700;
 }
 
-.header::before {
+/* .header::before {
   content: "";
   position: absolute;
   top: 0;
@@ -77,7 +77,7 @@ body {
   background: #8e192c;
   z-index: -1;
 
-}
+} */
 
 
 .logo {
@@ -195,17 +195,27 @@ body {
   left: 0;
 }
 
-/* .first {
+.first {
   position: relative;
   font-family: "Martel Sans", sans-serif;
   font-weight: 600;
   height: 75vh;
   width: 100%;
-  background: url(Assets/images/kaziranga-background.jpg);
+  /* background: url(Assets/images/kaziranga-background.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-} */
+}
+
+.first>img{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left:0;
+  object-fit: cover;
+  object-position: center center;
+}
 
 .welcome {
   position: relative;
@@ -332,13 +342,13 @@ body {
 
 /* Features  Section*/
 
-/* .features {
+.features {
   position: relative;
   font-family: "Potta One", system-ui;
   font-weight: 400;
   
   width: 100%;
-  background: url("/Features svg/orangphoto-01.jpeg");
+  /* background: url("/Features svg/orangphoto-01.jpeg"); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -347,7 +357,17 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-} */
+}
+
+.features>img{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  object-position: center center;
+}
 
 .features .box {
   height: 100%;
@@ -449,7 +469,7 @@ body {
   }
 }
 
-@media (max-width: 1165px) {
+/* @media (max-width: 1165px) {
   .icons {
     display: inline-flex;
   }
@@ -497,7 +517,7 @@ body {
     opacity: 1;
     transition-delay: calc(0.15s * var(--i));
   }
-}
+} */
 
 /* Gallary CSS */
 
