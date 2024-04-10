@@ -11,7 +11,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: url(Images/5494855.jpg);
+  background-image: url(Facilities/5494855.jpg);
 }
 .wrapper h1 {
   font-size: 3em;
@@ -64,7 +64,7 @@
       rgba(211, 211, 211, 0.7) 0%,
       rgba(212, 206, 206, 0.7) 100%
     ),
-    url("Images/images.jpg");
+    url("Facilities/security.jpg");
   background-size: cover;
 }
 .card:nth-child(2):hover {
@@ -81,7 +81,7 @@
     rgba(211, 211, 211, 0.7) 0%,
     rgba(212, 206, 206, 0.7) 100%
     ) ,
-     url('bg.jpg');
+     url('Facilities/photo\ 4\ middle.jpeg');
      background-size: cover;
 }
 .card:nth-child(4):hover {
@@ -89,7 +89,7 @@
     rgba(211, 211, 211, 0.7) 0%,
     rgba(212, 206, 206, 0.7) 100%
     ) ,
-     url('Images/electricity.jpg');
+     url('Facilities/electricity.jpg');
      background-size: cover;
 }
 .card:nth-child(5):hover {
@@ -97,7 +97,7 @@
     rgba(211, 211, 211, 0.7) 0%,
     rgba(212, 206, 206, 0.7) 100%
     ) ,
-     url('Images/water.jpg');
+     url('Facilities/water.jpg');
      background-size: cover;
 }
 .card:nth-child(6):hover {
@@ -105,7 +105,7 @@
     rgba(211, 211, 211, 0.7) 0%,
     rgba(212, 206, 206, 0.7) 100%
     ) ,
-     url('Images/wifi.jpg');
+     url('Facilities/wifi.jpg');
      background-size: cover;
 }
 @media (max-width: 991px) {
