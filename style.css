@@ -280,6 +280,10 @@ body {
   height: 93vh;
 } */
 
+
+.aboutUs-content h2{
+  color: rgb(159, 66, 66);
+}  
 .aboutUs-heading h1 {
   margin-top: 20px;
   text-align: center;
@@ -308,7 +312,14 @@ body {
 
 .aboutUs-container img {
   width: 350px;
-  border-radius: 20px;
+  border-radius: 25% 10%;
+  transition: transform 0.5s ease-in;
+  overflow: hidden;
+}
+
+.aboutUs-container img:hover{
+  transform: scale(1.01);
+  /* width: 700px; */
 }
 
 .aboutUs-container .aboutUs-content {
