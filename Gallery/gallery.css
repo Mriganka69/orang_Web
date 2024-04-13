@@ -1,0 +1,58 @@
+*{
+    text-align: center;
+    /* color: #8e192c; */
+    /* background-color: #ff0000; */
+}
+h1, h2{
+    color: #8e192c;
+}
+
+div.gallery {
+    border: 2px solid #000000;
+    background-color: rgb(159, 66, 66);
+
+  }
+  
+  div.gallery:hover {
+    border: 2px solid #ff0000;
+    background-color: #ffbf00;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 6px 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
