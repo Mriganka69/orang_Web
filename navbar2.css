@@ -5,7 +5,7 @@
 }
 
 .KUlogo {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     background-color: white;
@@ -13,6 +13,8 @@
 
 .KUlogo img {
     margin: 5px;
+    width: auto;
+    border-radius: 0;
 }
 
 .sub-header {
@@ -25,7 +27,7 @@
 
 nav {
     display: flex;
-    padding: 2% 4%;
+    padding: 10px 4%;
     justify-content: space-between;
     align-items: center;
     background: rgba(0, 0, 0, 0.1);
@@ -33,7 +35,20 @@ nav {
     z-index: 100;
 }
 
-nav h2{
+/* nav>a{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+} */
+
+.kulogo2 {
+    width: 150px;
+    border-radius: 0px;
+    margin-right: 25px;
+}
+
+nav h2 {
     font-size: 2rem;
 }
 
@@ -130,7 +145,6 @@ nav a {
         display: block;
     }
 
-
     nav .nav-links ul {
         position: absolute;
         top: 100%;
@@ -153,4 +167,14 @@ nav a {
         height: 17.7rem;
     }
 
+}
+
+@media(max-width: 700px) {
+  .KUlogo{
+    display: flex;
+  }
+
+  .kulogo2{
+    display: none;
+  }
 }
