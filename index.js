@@ -1,1 +1,2 @@
 setInterval(slider, 2000);
+
