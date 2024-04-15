@@ -18,23 +18,11 @@
     height: 180px;
 } */
 
-.photo{
-    height: 180px;
-    width: 180px;
-    object-fit: cover;
-}
-
 .team .member .teampic{
     overflow: hidden;
     width: 180px;
-    /* height: 180px; */
     border-radius: 50%;
 }
-/* .team .member .teampic{
-    overflow: hidden;
-    width: 180px;
-    border-radius: 50%;
-} */
 
 .team .member .member-info{
     padding: 30px;
