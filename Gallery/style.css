@@ -10,9 +10,21 @@ h2{
   color: #f44336
 }
 .header {
+  /* width: 140px; */
+  height: auto;
+  transition: .5s linear;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 15px;
   text-align: center;
+  margin: 0 5px;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: 900;
   padding: 32px;
 }
+
 
 .row {
   display: -ms-flexbox; 
