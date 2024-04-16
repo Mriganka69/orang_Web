@@ -758,6 +758,7 @@ a:focus {
 .footer-widget ul li a {
   color: #b7b7b7;
   font-size: 15px;
+  text-decoration: none;
 }
 .footer-widget ul li a:hover {
   color: #e53637;
