@@ -64,7 +64,7 @@
     background: transparent;
     position: relative;
     cursor: pointer;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .hero-btn:hover{
