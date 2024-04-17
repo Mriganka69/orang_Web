@@ -57,14 +57,14 @@ h2::after {
   box-sizing: border-box; 
 }
 
-.column:first-child {
-  padding-left: 30px; /* Add extra left padding for the first column */
+/* .column:first-child {
+  padding-left: 30px; 
 }
 
-/* Adjust padding for the last column (right side) */
+
 .column:last-child {
-  padding-right: 30px; /* Add extra right padding for the last column */
-}
+  padding-right: 30px; 
+} */
 
 .column img {
   margin-top: 8px;
