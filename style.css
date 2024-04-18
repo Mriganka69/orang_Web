@@ -21,12 +21,16 @@
 }
 
 :root{
-  --primary-color: #edf2fc;
+  --primary-color: #ffffff;
   --secondary-color: #212121;
+  --about-us-para: #666;
+  --footer-color: #212122;
 }
 .dark-theme{
   --primary-color: #000000;
   --secondary-color: #ffffff;
+  --about-us-para: #ffafaf;
+  --footer-color: #555555;
 }
 
 /* welcome section */
@@ -126,7 +130,7 @@
 } */
 
 .aboutUs-content h2 {
-  color: rgb(159, 66, 66);
+   color: rgb(159, 66, 66); 
 }
 
 .aboutUs-heading h1 {
@@ -140,7 +144,7 @@
   text-align: center;
   /* font-size: 18px; */
   font-size: 1.5rem;
-  color: #666;
+  color: var(--about-us-para);
   margin-bottom: 35px;
 }
 
@@ -219,7 +223,7 @@
 .hero-content button{
   display: inline-block;
   background-color: rgb(82, 76, 74);
-  color: #ffffff;
+  color: var(--primary-color);
   padding: 12px 24px;
   border-radius: 5px;
   font-size: 20px;
@@ -227,7 +231,7 @@
   transition: 0.3s ease;
 }
 .container .hero-content button a{
-  color: #ffffff;
+  color: var(--primary-color);
   text-decoration: none;
 }
 .hero-content button:hover{
@@ -836,7 +840,7 @@ a:focus {
 }
 
 .footer {
-  background: #222222;
+  background: var(--footer-color);
   padding-top: 70px;
 }
 .footer-about {
@@ -865,7 +869,7 @@ a:focus {
   position: absolute;
   right: 10%;
   font-size: 2.8rem;
-  color: #000000;
+  color: var(--secondary-color);
   cursor: pointer;
   display: inline-flex;
 
@@ -1059,4 +1063,28 @@ h3 {
 
 a {
   text-decoration: none;
+}
+
+
+
+
+/* Changes made for darkmode */
+.container{
+  background-color: var(--primary-color);
+}
+.hero{
+  background-color: var(--primary-color);
+}
+.campus{
+  background-color: var(--primary-color);
+}
+.facility{
+  background-color: var(--primary-color);
+}
+.gallery{
+  background-color: var(--primary-color);
+  z-index: 1000;
+}
+body{
+  background-color: var(--primary-color);
 }
