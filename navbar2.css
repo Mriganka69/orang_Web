@@ -3,6 +3,24 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
+:root{
+    --primary-color: #ffffff;
+    --secondary-color: #212121;
+    --about-us-para: #666;
+    --footer-color: #212122;
+    --gallary-transparent: rgba(0,0,0,0.5);
+    --gallary-background2: rgba(255, 255, 255, 0.5);
+    --gallary-background1: rgba(255, 255, 255, 1.5);
+  }
+  .dark-theme{
+    --primary-color: #000000;
+    --secondary-color: #ffffff;
+    --about-us-para: #ffafaf;
+    --footer-color: #555555;
+    --gallary-transparent: rgba(0,0,0,0.5);
+    --gallary-background2: rgba(0, 0, 0, 0.5);
+    --gallary-background1: rgba(255, 255, 255, 1.5);
+  }
 
 .KUlogo {
     display: none;
@@ -50,12 +68,13 @@ nav {
 
 nav h2 {
     font-size: 2rem;
+    color: var(--secondary-color);
 }
 
 nav a {
     text-decoration: none;
     font-size: 27px;
-    color: black;
+    color: var(--secondary-color);
 }
 
 .nav-links {

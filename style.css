@@ -25,12 +25,18 @@
   --secondary-color: #212121;
   --about-us-para: #666;
   --footer-color: #212122;
+  --gallary-transparent: rgba(0,0,0,0.5);
+  --gallary-background2: rgba(255, 255, 255, 0.5);
+  --gallary-background1: rgba(255, 255, 255, 1.5);
 }
 .dark-theme{
   --primary-color: #000000;
   --secondary-color: #ffffff;
   --about-us-para: #ffafaf;
   --footer-color: #555555;
+  --gallary-transparent: rgba(0,0,0,0.5);
+  --gallary-background2: rgba(0, 0, 0, 0.5);
+  --gallary-background1: rgba(255, 255, 255, 1.5);
 }
 
 /* welcome section */
@@ -451,14 +457,28 @@ img{
 
 .gallery {
   background-image: linear-gradient(
-      rgba(255, 255, 255, 1.5),
-      rgba(255, 255, 255, 0.5)
+      var(--gallary-background1),
+      var(--gallary-background2)
     ),
     url(caraousel1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  /* background: #1e3250; */
-  border-top: 1px solid white;
+  /* background: #113f84; */
+  border-top: 1px solid var(--primary-color);
+  padding-top: 0;
+}
+.gallery h1{
+  background-color: var(--primary-color);
+}
+.gallery p{
+  background-color: var(--primary-color);
+  margin-bottom: 0;
+}
+.gallery{
+  background-color: var(--primary-color);
+}
+.top-part-gallery{
+  background-color: var(--primary-color);
 }
 
 .galleryheading {
@@ -475,6 +495,7 @@ img{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: var(--primary-color);
 }
 
 .gallery-image img {
@@ -482,6 +503,7 @@ img{
   width: 350px;
   transform: scale(1);
   transition: transform 0.4s ease;
+  
 }
 
 .img-box {
@@ -491,9 +513,9 @@ img{
   width: 350px;
   overflow: hidden;
   display: inline-block;
-  color: white;
+  color: var(--primary-color);
   position: relative;
-  background-color: white;
+  background-color: var(--primary-color);
 }
 
 .caption {
@@ -525,7 +547,7 @@ img{
 }
 
 .img-box:hover .transparent-box {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--gallary-transparent);
 }
 
 .img-box:hover .caption {
@@ -661,7 +683,7 @@ img{
   overflow: hidden;
   border: 20px solid #8e192c;
   border-radius: 8px;
-  box-shadow: 10px 25px 30px rgba(30, 30, 200, 0.3);
+  /* box-shadow: 10px 25px 30px rgba(30, 30, 200, 0.3); */
 }
 
 .wrapper-gallary {
@@ -836,7 +858,7 @@ a:hover,
 a:focus {
   text-decoration: none;
   outline: none;
-  color: #ffffff;
+  color: var(--primary-color);
 }
 
 .footer {
@@ -1020,7 +1042,7 @@ h3 {
 .layer h3 {
   width: 100%;
   font-weight: 500;
-  color: #fff;
+  color: var(--primary-color);
   font-size: 26px;
   bottom: 0;
   left: 50%;
@@ -1090,4 +1112,13 @@ body{
 }
 .All-body{
   background-color: var(--primary-color);
+}
+.whole-gallery{
+  background-color: var(--primary-color);
+}
+.top-part-gallery p{
+  margin-bottom: 0rem;
+}
+.gallery{
+  padding-top: 0;
 }
