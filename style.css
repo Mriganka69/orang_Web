@@ -15,6 +15,20 @@
   font-family: "Poppins", sans-serif;
 }
 
+#moon{
+  width: 30px;
+  cursor: pointer;
+}
+
+:root{
+  --primary-color: #edf2fc;
+  --secondary-color: #212121;
+}
+.dark-theme{
+  --primary-color: #000000;
+  --secondary-color: #ffffff;
+}
+
 /* welcome section */
 
 .first .box {
