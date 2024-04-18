@@ -1088,3 +1088,6 @@ a {
 body{
   background-color: var(--primary-color);
 }
+.All-body{
+  background-color: var(--primary-color);
+}
