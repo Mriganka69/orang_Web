@@ -82,6 +82,10 @@ nav a {
     text-align: right;
 }
 
+.nav-links ul{
+    margin-bottom: 0;
+}
+
 .nav-links ul li {
     list-style: none;
     display: inline-block;
@@ -147,7 +151,7 @@ nav a {
     display: none;
 }
 
-@media(max-width: 1165px) {
+@media(max-width: 1250px) {
     .icons {
         display: inline-flex;
     }
